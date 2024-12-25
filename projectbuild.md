@@ -1,4 +1,4 @@
---------- Node-Project-Build ----------
+----- Node-Project-Build -----
 1. npm init -y - > package.json create
 2.npm i express -> 
 3.create app.js -> main app
@@ -6,14 +6,23 @@
 5.here we have used the dotenv for port runnng
 [note- > make changes in package.json in main field to make server run]
 
------------------ Databse-Connection ----------------------
--1. npm i mongoose
--2.create [db/db.js]
--3.call the function from the db.js to app.js to connect the database
+----- Databse-Connection -----
+1. npm i mongoose
+2.create [db/db.js]
+3.call the function from the db.js to app.js to connect the database
 
 ----- User-Model, User-Controllers -----
--1.create [models/user.model.js] -> CREATE Schema and methods for comparing password
--2.packgage 
-    -1.bcrypt - to hash the password 
-    -2.jwt - to generate token
--3.create [controllers/controllers.js] to write the logic for the models we have created
+1.create [models/user.model.js] -> CREATE Schema and methods for comparing password
+2.packgage 
+    1.bcrypt - to hash the password 
+    2.jwt - to generate token
+    3.create [controllers/controllers.js] to write the logic for the models we have created
+
+----- Authentication -----
+1.create [routes/user.routes.js]
+    Express-Validator - used to check the comming data from front-end is valid or not.
+2. In controller we have to write the code for creating a new user 
+3.create [services/user.service.js]
+    we create this for using the MONGODb service to stored the new user data
+4.token generate is taken care here.
+5.connect these files to the app.js
