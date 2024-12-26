@@ -43,3 +43,10 @@
     here all necessary file and code should be there to create the auth middleware
 2. use this middleware in route directly
 3. here a package {cookie-parser} is used 
+
+--- creation of logout route ---
+note:- TTL - TIME TO LEAVE
+1.[models/blacklistToken.model.js] - create a schema for blacklist token with ttl of 24hrs
+2.[routes/user.route.js] - here create the logout route
+3.[controllers/user.controllers.js] - create the controllers for logout
+4.[middleware/auth.middleware.js] - make changes to update the token 

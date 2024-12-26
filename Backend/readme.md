@@ -57,3 +57,45 @@ Logs in an existing user with the provided credentials.
   }
 }
 ```
+
+## GET /users/profile
+
+### Description
+Fetches the profile of the authenticated user.
+
+### Required Data
+- **Authorization**: Bearer token (JWT)
+
+### Status Codes
+- **200 OK**: Profile fetched successfully.
+- **401 Unauthorized**: User is not authenticated.
+
+### Example Response
+```json
+{
+  "fullname": {
+    "firstname": "John",
+    "lastname": "Doe"
+  },
+  "email": "john.doe@example.com"
+}
+```
+
+## GET /users/logout
+
+### Description
+Logs out the authenticated user by blacklisting the token.
+
+### Required Data
+- **Authorization**: Bearer token (JWT)
+
+### Status Codes
+- **200 OK**: User logged out successfully.
+- **401 Unauthorized**: User is not authenticated.
+
+### Example Response
+```json
+{
+  "message": "Logged Out Successfully"
+}
+```
