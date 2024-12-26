@@ -26,3 +26,12 @@
     we create this for using the MONGODb service to stored the new user data
 4.token generate is taken care here.
 5.connect these files to the app.js
+
+
+----- Login route creation ------
+1.[user.routes.js] - create a post route 
+    email and password login
+2.[user.controllers.js] - create login controllers for finding the user 
+
+----- profile route creation -----
+

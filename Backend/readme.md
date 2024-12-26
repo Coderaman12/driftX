@@ -29,3 +29,31 @@ Registers a new user with the provided information.
   }
 }
 ```
+
+## POST /users/login
+
+### Description
+Logs in an existing user with the provided credentials.
+
+### Required Data
+- **email**: String (must be a valid email address)
+- **password**: String (minimum 6 characters)
+
+### Status Codes
+- **200 OK**: User logged in successfully.
+- **400 Bad Request**: Validation errors or missing required fields.
+- **401 Unauthorized**: Invalid email or password.
+
+### Example Response
+```json
+{
+  "token": "your_jwt_token_here",
+  "user": {
+    "fullname": {
+      "firstname": "John",
+      "lastname": "Doe"
+    },
+    "email": "john.doe@example.com"
+  }
+}
+```
