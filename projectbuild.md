@@ -34,4 +34,12 @@
 2.[user.controllers.js] - create login controllers for finding the user 
 
 ----- profile route creation -----
+1.[user.routes.js] - create a profile route 
+2.[user.controllers.js] - create a controllers here 
+3.Auth we have to add in our profile so we have to create the middleware here
 
+--- creation of auth middleware ---
+1.[middlewares/auth.middleware.js] create 
+    here all necessary file and code should be there to create the auth middleware
+2. use this middleware in route directly
+3. here a package {cookie-parser} is used 
