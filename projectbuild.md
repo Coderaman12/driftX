@@ -50,3 +50,7 @@ note:- TTL - TIME TO LEAVE
 2.[routes/user.route.js] - here create the logout route
 3.[controllers/user.controllers.js] - create the controllers for logout
 4.[middleware/auth.middleware.js] - make changes to update the token 
+
+
+----- captain/driver  ------
+1.model- for captain
