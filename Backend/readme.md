@@ -116,10 +116,6 @@ Registers a new captain with the provided information.
   - **plate**: String (minimum 3 characters)
   - **capacity**: Number (minimum 1)
   - **vehicleType**: String (must be one of 'car', 'auto', 'motorcycle')
-- **status**: String (optional, default is 'inactive')
-- **location** (object, optional):
-  - **lat**: Number
-  - **lng**: Number
 
 ### Status Codes
 - **201 Created**: Captain registered successfully.
@@ -140,11 +136,6 @@ Registers a new captain with the provided information.
       "plate": "XYZ123",
       "capacity": 4,
       "vehicleType": "car"
-    },
-    "status": "inactive",
-    "location": {
-      "lat": 12.9715987,
-      "lng": 77.5945627
     }
   }
 }
