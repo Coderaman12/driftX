@@ -59,5 +59,6 @@ note:- TTL - TIME TO LEAVE
 4. add captain files to the [app.js] to run in the app
 5.[services/captain.service.js] - to created the captain services
 
----- create [captain/register] ----
+---- create [captain/register,login,profile,logout] ----
 1.same creation user registration creation only
+-> same process is there for captain also
