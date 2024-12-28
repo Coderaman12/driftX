@@ -53,4 +53,11 @@ note:- TTL - TIME TO LEAVE
 
 
 ----- captain/driver  ------
-1.model- for captain
+1.[models/captain.model.js] - here create the captain schema and methods
+2.[controllers/captain.controller.js] - logics for routes
+3.[routs/captain.route.js] - here creating the routes
+4. add captain files to the [app.js] to run in the app
+5.[services/captain.service.js] - to created the captain services
+
+---- create [captain/register] ----
+1.same creation user registration creation only
