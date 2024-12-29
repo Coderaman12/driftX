@@ -62,3 +62,28 @@ note:- TTL - TIME TO LEAVE
 ---- create [captain/register,login,profile,logout] ----
 1.same creation user registration creation only
 -> same process is there for captain also
+
+
+
+
+---- FONTEND PART ----
+1.setup for frontend
+    1.npm create vite@latest
+    2.folder name 
+    3.language
+    4.go to that folder 
+    5.npm i
+2.add the tailwindcss in our project
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+3.create tha page folder in the src and all the routes pages
+4.add the react-router-dom for routing in our app
+    1.npm i react-router-dom
+    2.go to main.jsx and wrap the [<App />] in BrowserRouter
+    3. In app.jsx use the routes heirarchy for routing
+        <Routes>
+            <Route path="/" element={<Home />} />
+        </Routes>
+5.Now the Ui/UX for each page is going to start
+note- only the important things is written here
+    1.After Creating the 2-way Binding
