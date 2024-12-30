@@ -63,7 +63,7 @@ const CaptainLogin = () => {
                     >Sign In As User</Link>
                 </div>
         </div>
-      )
+    )
 }
 
 export default CaptainLogin

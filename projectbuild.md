@@ -87,3 +87,7 @@ note:- TTL - TIME TO LEAVE
 5.Now the Ui/UX for each page is going to start
 note- only the important things is written here
     1.After Creating the 2-way Binding
+    2.Context 
+        this is the small version of redux toolkit
+        -> used to centralize the data in our react app
+        create [src/context/filename] -> write data logic for centralizing

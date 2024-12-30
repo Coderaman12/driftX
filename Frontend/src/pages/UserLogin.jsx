@@ -43,8 +43,8 @@ const UserLogin = () => {
                 placeholder='password'
                 /> 
                 <button
-                className='w-full bg-black rounded text-white py-3 text-xl tracking-wider'
-                >Login</button>
+                    className='flex items-center justify-center w-full bg-black rounded text-white py-3 text-xl tracking-wider'
+                    >Login</button>
                 <p className='font-xl mt-2 capitalize'>New User?
                     <Link to='/signup'
                     className='text-blue-600 ml-2'
