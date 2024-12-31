@@ -91,3 +91,17 @@ note- only the important things is written here
         this is the small version of redux toolkit
         -> used to centralize the data in our react app
         create [src/context/filename] -> write data logic for centralizing
+
+---- Backend and Frontend intergration ----
+1.useNavigate for page navigation
+2.create a dotenv in frontend for the baseurl save 
+3.axios - for sending frontend data to the server 
+4.context for use the user data
+---- create the Auth for the pages by [UserProtectedWrapper.jsx]
+----
+    1.create this file 
+    2.import the usercontext,UserDataContext,navigate
+    3.pass the children
+    4.the whole concept is based on the token from local storage -> because if we use the userdetails from the context when refresh is done the data is lost
+    5.so forn the [user login and signup sent the token also]
+    6.in app.jsx wrap the route which we want to protect.
