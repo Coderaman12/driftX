@@ -105,3 +105,7 @@ note- only the important things is written here
     4.the whole concept is based on the token from local storage -> because if we use the userdetails from the context when refresh is done the data is lost
     5.so forn the [user login and signup sent the token also]
     6.in app.jsx wrap the route which we want to protect.
+
+-- creation of the captain context --
+1. create [src/context/captainContext.js]
+2. wrap this file to the main jsx 
