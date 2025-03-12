@@ -109,3 +109,7 @@ note- only the important things is written here
 -- creation of the captain context --
 1. create [src/context/captainContext.js]
 2. wrap this file to the main jsx 
+
+-- Package for Animation --
+1.gsap
+2.@gsap/react

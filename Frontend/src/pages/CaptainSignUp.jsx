@@ -18,6 +18,7 @@ const CaptainSignUp = () => {
     // const[captainData,setCaptainData] = useState({})
 
 
+
     const {captain,setCaptain} = useContext(CaptainDataContext);
                 
     const submitHandler =async (e)=>{

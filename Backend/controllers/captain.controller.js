@@ -14,7 +14,7 @@ module.exports.registerCaptain = async (req,res,next)=>{
 
     const isCaptainExist = await captainModel.findOne({email});
     if(isCaptainExist){
-        res.status(400).json({message:"Captain Already Registered With This Email"})
+        return res.status(400).json({message:"Captain Already Registered With This Email"})
     }
     const hashPassword  = await captainModel.hashPassword(password);
     
@@ -43,7 +43,7 @@ module.exports.loginCaptain = async (req,res,next)=>{
     const{email,password} = req.body;
     const captain = await captainModel.findOne({email}).select('+password');
     if(!captain){
-        res.status(401).json({message:"Invalid Email or Password"});
+        return res.status(401).json({message:"Invalid Email or Password"});
     }
     const isMatch = await captain.comparePassword(password);
     if(!isMatch){
